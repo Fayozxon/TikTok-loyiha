@@ -1,0 +1,174 @@
+/* Core styles */
+* {
+	font-family: Comfortaa, "Century Gothic", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #111;
+	margin: 0;
+	color: #fff;
+}
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.button {
+	border-radius: 10px;
+	border: 3px solid #000;
+	background: transparent;
+	padding: 15px;
+	cursor: pointer;
+	background: #000;
+	transition: 0.5s;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+
+.button:hover {
+	box-shadow: -8px 0 0 0 #4de8f4, 8px 0 0 0 #fd3e3e;
+}
+
+.section-title {
+	color: #000;
+	font-size: 25px;
+	text-shadow: -1px -1px 0 #4de8f4, 1px 1px 0 #fd3e3e;
+	margin-bottom: 5px;
+}
+
+.section-subtitle {
+	margin-top: 0;
+	font-size: 45px;
+	text-shadow: -3px -3px 0 #4de8f4, 3px 3px 0 #fd3e3e;
+	text-transform: capitalize;
+}
+
+
+/* Main Header */
+
+.main-header {
+	background: #011;
+	width: 100%;
+	box-shadow: 0 3px 20px 0 #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+.main-header .container {
+	display: flex;
+	align-items: center;
+}
+
+.main-header__brand img {
+	height: 34px;
+	filter: invert(1);
+}
+
+.main-navigation__item {
+	display: inline-block;
+	padding: 10px;
+}
+
+.main-navigation__item a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 200;
+	transition: 0.5s;
+}
+
+.main-navigation__item a.active {
+	text-shadow: -1px -1px 0 #4de8f4, 1px 1px 0 #fd3e3e;
+	color: transparent;
+}
+
+.main-navigation__item a:hover {
+	text-shadow: -1px -1px 0 #4de8f4, 1px 1px 0 #fd3e3e;
+	color: transparent;
+}
+
+
+
+
+/* Footer Section */
+
+.footer-section {
+	background: #011;
+	width: 100%;
+	box-shadow: 0 0 20px 0 #000;
+	margin-top: 100px;
+}
+
+.footer-section .container {
+	padding-top: 50px;
+	padding-bottom: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.footer-navigation__brand {
+	text-align: center;
+}
+
+.footer-navigation__brand img {
+	height: 60px;
+	filter: invert(1);
+}
+
+.footer-navigation__items {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-navigation__item {
+	display: inline-block;
+}
+
+.footer-navigation__item a {
+	color: #000;
+	font-size: 18px;
+	text-decoration: none;
+	text-shadow: -2px -2px 0 cyan, 2px 2px 0 red;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+.footer-navigation__item a:hover {
+	color: red;
+}
+
+.footer-section__description {
+	font-size: 17px;
+	color: #eee;
+}
+
+.footer-section__description i {
+	color: red;
+}
+
+
+/* RWD Styles */
+
+@media only screen and (max-width: 991px) {
+	.main-navigation {
+		display: none;
+	}
+	.footer-navigation__items {
+		flex-direction: column;
+	}
+}
