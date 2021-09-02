@@ -78,14 +78,14 @@
 			</h4>
 			<h1 class="section-subtitle">Men bilan<br>bog'laning</h1>
 			<!-- tag form -->
-			<form method="GET" action="index.html" class="form-section__container">
+			<form method="POST" data-netlify="true" name="contact" action="index.html" class="form-section__container">
 				<div class="form-section__inputs">
 					<!-- firstname -->
 					<label for="firstname">Ismingiz:</label>
-					<input type="text" name="firstname" id="firstname"><br>
+					<input type="text" name="name" id="firstname"><br>
 					<!-- lastname -->
-					<label for="lastname">Familyangiz:</label>
-					<input type="text" name="lastname" id="lastname">
+					<label for="lastname">Email:</label>
+					<input type="email" name="email" id="lastname">
 				</div>
 				<textarea class="form-section__textarea" placeholder="Xabaringiz mazmuni..."></textarea>
 				<div class="form-section__buttons">
